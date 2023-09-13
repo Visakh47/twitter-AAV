@@ -40,6 +40,10 @@
 }
 .forHover:hover {
     background-color: lightgrey;
+    border-radius: 30px;
+    padding: 12px 64px;
+    font-size: 16px;
+    cursor: pointer;
   }
 
 .post_button{
