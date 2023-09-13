@@ -1,4 +1,4 @@
 <div class="feed">
-    <app-tweet></app-tweet>
-    <app-view-tweets></app-view-tweets>
+    <app-tweet (TweetList)="postTweet($event)"></app-tweet>
+    <app-view-tweets [tweetList]="tweetList"></app-view-tweets>
 </div>

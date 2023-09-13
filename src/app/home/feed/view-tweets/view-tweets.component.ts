@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
+import { tweet } from '../feed.interface';
 
 @Component({
   selector: 'app-view-tweets',
@@ -6,5 +7,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./view-tweets.component.scss']
 })
 export class ViewTweetsComponent {
-
+  @Input() public tweetList: tweet[] = [];
 }
