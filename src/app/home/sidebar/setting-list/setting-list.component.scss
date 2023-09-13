@@ -1,0 +1,26 @@
+.sidebar {
+    width: 300px;
+    background-color: white;
+    color: #fff;
+    padding: 20px;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+  }
+  /* Style for the circular image container */
+.twitterImage {
+    width: 50px; 
+    height: 50px; 
+    border-radius: 50%;
+    overflow: hidden; 
+    margin: 0 auto; 
+    border: 2px solid #1DA1F2; 
+}
+
+/* Style for the image within the circular container */
+.twitterImage img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
