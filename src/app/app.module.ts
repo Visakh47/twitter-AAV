@@ -6,21 +6,16 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { SidebarComponent } from './home/sidebar/sidebar.component';
 import { SettingListComponent } from './home/sidebar/setting-list/setting-list.component';
-import { TrendingComponent } from './trending/trending.component';
-import { TrendingListComponent } from './trending-list/trending-list.component';
+import { HomeModule } from './home/home.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HomeComponent,
-    SidebarComponent,
-    SettingListComponent,
-    TrendingComponent,
-    TrendingListComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HomeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
