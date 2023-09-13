@@ -1,0 +1,35 @@
+
+
+.tweet-container {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ccc;
+    padding: 16px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .tweet-input {
+    width: 100%;
+    padding: 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    margin-bottom: 16px;
+    resize: none;
+  }
+  
+  .tweet-button {
+    background-color: #1da1f2;
+    color: #fff;
+    border: none;
+    border-radius: 24px;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .tweet-button:hover {
+    background-color: #0d8bff;
+  }
+  
