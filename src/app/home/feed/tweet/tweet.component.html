@@ -1,6 +1,6 @@
 
 <div class="tweet-container">
-    <textarea class="tweet-container__input" #tweet placeholder="What's happening?"></textarea>
-    <button class="tweet-container__button" (click)="postTweet(tweet.value)">Tweet</button>
+    <textarea [(ngModel)]="tweetContent" class="tweet-container__input"  placeholder="What's happening?"></textarea>
+    <button class="tweet-container__button" (click)="postTweet()">Tweet</button>
   </div>
   

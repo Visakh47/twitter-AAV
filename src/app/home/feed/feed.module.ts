@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { TweetComponent } from './tweet/tweet.component';
 import { ViewTweetsComponent } from './view-tweets/view-tweets.component';
 import { FeedComponent } from './feed.component';
+import { FormsModule } from '@angular/forms';
 
 
 
@@ -13,7 +14,8 @@ import { FeedComponent } from './feed.component';
     FeedComponent
   ],
   imports: [
-    CommonModule
+    CommonModule,
+    FormsModule
   ],
   exports: [
     FeedComponent,

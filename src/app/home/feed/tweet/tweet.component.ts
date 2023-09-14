@@ -7,11 +7,12 @@ import { tweet } from '../feed.interface';
   styleUrls: ['./tweet.component.scss']
 })
 export class TweetComponent {
+  public tweetContent!: string;
   @Output() public TweetList: EventEmitter<any> = new EventEmitter();
-  public postTweet(tweetContent: string): void{
+  public postTweet(): void{
     const twt: tweet ={
       id: 1,
-      content: tweetContent,
+      content: this.tweetContent,
       author: 'JohnDoe',
       username: '@JohnDoe'
     };
