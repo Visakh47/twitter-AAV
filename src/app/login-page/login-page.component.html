@@ -1,1 +1,18 @@
-<p>login-page works!</p>
+<div class="login-container">
+    <h1> Login Page</h1>
+    <div class="login-container__error" *ngIf="error">Login Failed, Sign up Again</div>
+    <div class="login-container__form">
+        <div>
+            <label class="login-container__form-label" > Enter email: </label>
+            <input type="email" name="email" [(ngModel)] = "form.email">
+        </div>
+        <div>
+            <label class="login-container__form-label"> Enter password: </label>
+            <input type="password" name="pwd" [(ngModel)] = "form.password">
+        </div>
+    </div>
+    <div class="login-container__buttons">
+        <button class="login-container__buttons-login" (click)="onSubmit()"> Login </button>
+        <button class="login-container__buttons-reset" (click) ="onSignUp()"> Sign Up </button>
+    </div>
+</div>

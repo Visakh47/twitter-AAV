@@ -1,1 +1,26 @@
-<p>signup-page works!</p>
+<div class="signup-container">
+    <h1> Sign Up Page</h1>
+    <div class="signup-container__error" *ngIf="error">Password Don't Match</div>
+    <div class="signup-container__form">
+        <div>
+            <label class="signup-container__form-label"> Enter name: </label>
+            <input type="text" name="username" [(ngModel)] = "form.name">
+        </div>
+        <div>
+            <label class="signup-container__form-label"> Enter email: </label>
+            <input type="email" name="email" [(ngModel)] = "form.email">
+        </div>
+        <div>
+            <label class="signup-container__form-label"> Enter password: </label>
+            <input type="password" name="pwd" [(ngModel)] = "form.password">
+        </div>
+        <div>
+            <label class="signup-container__form-label"> Confirm password: </label>
+            <input type="password" name="cpwd" [(ngModel)] = "form.confirmPassword">
+        </div>
+    </div>
+    <div class="signup-container__buttons">
+        <button class="signup-container__buttons-signup" (click)="onSubmit()"> Submit </button>
+        <button class="signup-container__buttons-reset" (click)="onReset()"> Reset </button>
+    </div>
+</div>

@@ -17,5 +17,7 @@ export class TweetComponent {
       username: '@JohnDoe'
     };
     this.TweetEmitter.emit(twt);
+
+    this.tweetContent = '';
   }
 }
