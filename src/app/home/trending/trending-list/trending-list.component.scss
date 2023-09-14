@@ -1,0 +1,149 @@
+
+.trending-box{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    background-color: #f0f0f0; 
+    margin-top: 20px;
+  }
+  .trending-search {
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    padding: 7px; 
+    background-color: #f0f0f0; 
+    border-radius: 50px; 
+    width: 240px; 
+}
+
+
+.trending-search-icon {
+    font-size: 24px;
+    margin-right: 10px; 
+}
+.trending-search-icon img{
+  padding-top: 2px;
+  width: 20px;
+}
+.trending-search-input {
+  background-color: #f0f0f0; 
+  flex: 1;
+  border: none; 
+  outline: none; 
+}
+
+.trending-subscribe {
+  background-color: #f0f0f0;
+  margin-top: 30px;
+  padding: 20px; 
+  border-radius: 20px; 
+  max-width: 300px; 
+}
+
+.trending-subscribe-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.trending-subscribe-content {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.trending-subscribe-button {
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.trending-subscribe-button:hover {
+  background-color: darkblue;
+}
+
+.trending-happening {
+  background-color: #f0f0f0;
+  padding: 20px;
+  margin-top: 30px;
+  border-radius: 10px;
+  max-width: 300px;
+}
+
+.trending-happening-heading {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.trending-happening-body {
+  font-size: 14px;
+  padding-top: 20px;
+}
+
+.tr-ha-bo-place {
+  font-size: 12px;
+  color: #333;
+}
+
+.tr-ha-bo-hashtag {
+  font-size: 14px;
+  font-weight: bold;
+  color: rgb(29, 21, 21);
+}
+
+.tr-ha-bo-content {
+  font-size: 12px;
+  color: #333;
+}
+
+.tr-ha-bo-post {
+  font-size: 12px;
+  color: #333;
+}
+
+// Name section
+.trending-who {
+    margin-top: 20px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
+.trending-who-body {
+    display: flex;
+    align-items: center;
+}
+
+.tr-who-body-icon img {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.tr-who-body-name {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.tr-who-body-id {
+    font-size: 14px;
+    color: #333;
+    display: block; 
+    margin-top: 5px; 
+}
+
+.tr-who-body-followbtn {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    cursor: pointer;
+    margin-left: auto;
+}
