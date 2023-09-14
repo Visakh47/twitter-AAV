@@ -8,14 +8,13 @@ import { tweet } from '../feed.interface';
 })
 export class TweetComponent {
   @Output() public TweetList: EventEmitter<any> = new EventEmitter();
-  twt: tweet = {
-    id: 1,
-    content: 'HI',
-    author: 'JohnDoe',
-    username: '@JohnDoe'
-  };
   public postTweet(tweetContent: string): void{
-    this.twt.content = tweetContent;
-    this.TweetList.emit(this.twt);
+    const twt: tweet ={
+      id: 1,
+      content: tweetContent,
+      author: 'JohnDoe',
+      username: '@JohnDoe'
+    };
+    this.TweetList.emit(twt);
   }
 }
