@@ -1,4 +1,6 @@
 <div class="feed">
-    <app-tweet (TweetList)="postTweet($event)"></app-tweet>
+    <!-- C->P Here, so Output (TweetEmitter) in Child(tweet) where we pass the $event -> which has twt[from Child] to the postTweet from Parent   -->
+    <app-tweet (TweetEmitter)="postTweet($event)"></app-tweet>
+    <!-- P->C Here, so Input [tweetList] in Child(View) where we pass the tweetList directly from Parent(Feed)  -->
     <app-view-tweets [tweetList]="tweetList"></app-view-tweets>
 </div>
