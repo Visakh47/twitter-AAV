@@ -147,3 +147,8 @@
     cursor: pointer;
     margin-left: auto;
 }
+
+.scrollable-container {
+  max-height: 200px; 
+  overflow-y: auto; 
+}

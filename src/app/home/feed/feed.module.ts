@@ -4,6 +4,7 @@ import { TweetComponent } from './tweet/tweet.component';
 import { ViewTweetsComponent } from './view-tweets/view-tweets.component';
 import { FeedComponent } from './feed.component';
 import { FormsModule } from '@angular/forms';
+import { TitleCapitlizePipe } from 'src/app/pipes/title-capitlize.pipe';
 
 
 
@@ -11,11 +12,12 @@ import { FormsModule } from '@angular/forms';
   declarations: [
     TweetComponent,
     ViewTweetsComponent,
-    FeedComponent
+    FeedComponent,
+    TitleCapitlizePipe
   ],
   imports: [
     CommonModule,
-    FormsModule
+    FormsModule,
   ],
   exports: [
     FeedComponent,

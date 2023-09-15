@@ -4,7 +4,6 @@ import { SettingListComponent } from './setting-list/setting-list.component';
 import { SidebarComponent } from './sidebar.component';
 
 
-
 @NgModule({
   declarations: [
     SettingListComponent,

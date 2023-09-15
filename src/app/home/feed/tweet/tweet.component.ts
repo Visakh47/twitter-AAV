@@ -1,6 +1,7 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { tweet } from '../feed.interface';
 import { LocalStorageService } from 'src/app/service/local-storage.service';
+import { IUserDetails } from 'src/app/app.interface';
 
 const USER_KEY = 'userData'
 @Component({
@@ -14,12 +15,12 @@ export class TweetComponent {
   constructor(private readonly localStorageService: LocalStorageService) {}
   
   public postTweet(): void{
-    let userName: string = this.localStorageService.get(USER_KEY);
+    let user: IUserDetails = this.localStorageService.get(USER_KEY);
     const twt: tweet ={
-      id: 1,
+      id: Number(`${new Date().getTime()}${Math.floor(Math.random() * 10000)}`), //unique id
       content: this.tweetContent,
-      author: userName,
-      username: `@${userName}`,
+      author: user.name,
+      username: `@${user.name}`,
       liked: false
     };
     this.TweetEmitter.emit(twt);

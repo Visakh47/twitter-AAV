@@ -8,4 +8,9 @@ import { tweet } from '../feed.interface';
 })
 export class ViewTweetsComponent {
   @Input() public tweetList: tweet[] = [];
+
+  public likeTweet(twt : tweet) {
+    twt.liked = !twt.liked
+    console.log(twt.liked);
+  }
 }

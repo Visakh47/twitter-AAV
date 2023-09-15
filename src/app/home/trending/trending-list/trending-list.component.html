@@ -8,28 +8,29 @@
     <button class="trending-subscribe-button">Subscribe</button>
 </div>
 <div class="trending-box trending-happening">
+    <div class="scrollable-container">
     <div class="trending-happening-heading">What's happening</div>
-    <div class="trending-happening-body">
-        <div class="tr-ha-bo-place">Trending in India</div>
-        <div class="tr-ha-bo-hashtag">#HanshTag</div>
-        <div class="tr-ha-bo-content">content for the story appears here</div>
-        <div class="tr-ha-bo-post">4718 posts</div>
+    <ng-container *ngFor="let trending of trendingList">
+        <div class="trending-happening-body">
+            <div class="tr-ha-bo-place">{{trending.place}}</div>
+            <div class="tr-ha-bo-hashtag">{{trending.hashtag}}</div>
+            <div class="tr-ha-bo-content">{{trending.content}}</div>
+            <div class="tr-ha-bo-post">{{trending.postCount}}</div>
+        </div>
+    </ng-container>
     </div>
-
-    <!-- Unwnted -->
-    <div class="trending-happening-body">
-        <div class="tr-ha-bo-place">Trending in India</div>
-        <div class="tr-ha-bo-hashtag">#HanshTag</div>
-        <div class="tr-ha-bo-content">content for the story appears here</div>
-        <div class="tr-ha-bo-post">4718 posts</div>
-    <!-- unwanted ends -->
 </div>
-</div>
-<!-- <div class="trending-box trending-who">
-    <div class="trending-who-body">
-        <div class="tr-who-body-icon"><img/></div>
-        <div class="tr-who-body-name">Name</div>
-        <div class="tr-who-body-id">@personid</div>
-        <button class="tr-who-body-followbtn">follow</button>
+<div class="trending-box trending-who">
+    <div class="scrollable-container">
+    <ng-container *ngFor="let trendingPerson of trendingPersonList">
+   
+        <div class="trending-who-body">
+            <div class="tr-who-body-icon"><img/></div>
+            <div class="tr-who-body-name">{{trendingPerson.author}}</div>
+            <div class="tr-who-body-id">{{trendingPerson.username}}</div>
+            <button class="tr-who-body-followbtn">follow</button>
+        </div>
+   
+    </ng-container>
     </div>
-</div> -->
+</div>
