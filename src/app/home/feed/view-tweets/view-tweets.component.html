@@ -7,15 +7,15 @@
     <div class="tweet__header">
       <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLeUIbTRtb5F_GIXobmhSbPuHUK9k90ta1Zg&usqp=CAU" alt="Profile Picture" class="profile-picture">
       <div class="tweet__user">
-        <h3 class="tweet__user-name">Elon Musk</h3>
-        <p class="tweet__user-handle">@Elon</p>
+        <h3 class="tweet__user-name">{{twt.author}}</h3>
+        <p class="tweet__user-handle">{{twt.username}}</p>
       </div>
     </div>
     <p class="tweet__content">
         {{twt.content}}
     </p>
     <div class="tweet__actions">
-      <button class="tweet__like-button">Like</button>
+      <button class="tweet__like-button" [ngClass]="twt.liked? 'tweet__like-button-clicked':''">Like</button>
       <button class="tweet__share-button">Share</button>
     </div>
   </div>

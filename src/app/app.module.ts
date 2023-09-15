@@ -8,6 +8,8 @@ import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { LoginPageComponent } from './login-page/login-page.component';
 import { SignupPageComponent } from './signup-page/signup-page.component';
+import { UserAuthService } from './service/user-auth.service';
+import { LocalStorageService } from './service/local-storage.service';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,7 @@ import { SignupPageComponent } from './signup-page/signup-page.component';
     CommonModule,
     FormsModule
   ],
-  providers: [],
+  providers: [UserAuthService, LocalStorageService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -3,4 +3,5 @@ export interface tweet {
     content: string,
     author: string,
     username: string,
+    liked: boolean,
 }
