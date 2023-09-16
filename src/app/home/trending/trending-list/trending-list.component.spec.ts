@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { TrendingListComponent } from './trending-list.component';
 
 describe('TrendingListComponent', () => {

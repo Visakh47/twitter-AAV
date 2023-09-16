@@ -1,42 +1,44 @@
+.trending-box {
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #f0f0f0;
+  margin-top: 20px;
+}
 
-.trending-box{
-    padding-bottom: 20px;
-    padding-top: 20px;
-    background-color: #f0f0f0; 
-    margin-top: 20px;
-  }
-  .trending-search {
-    margin-top: 40px;
-    display: flex;
-    align-items: center;
-    padding: 7px; 
-    background-color: #f0f0f0; 
-    border-radius: 50px; 
-    width: 240px; 
+.trending-search {
+  margin-top: 40px;
+  display: flex;
+  align-items: center;
+  padding: 7px;
+  background-color: #f0f0f0;
+  border-radius: 50px;
+  width: 240px;
 }
 
 
 .trending-search-icon {
-    font-size: 24px;
-    margin-right: 10px; 
+  font-size: 24px;
+  margin-right: 10px;
 }
-.trending-search-icon img{
+
+.trending-search-icon img {
   padding-top: 2px;
   width: 20px;
 }
+
 .trending-search-input {
-  background-color: #f0f0f0; 
+  background-color: #f0f0f0;
   flex: 1;
-  border: none; 
-  outline: none; 
+  border: none;
+  outline: none;
 }
 
 .trending-subscribe {
   background-color: #f0f0f0;
   margin-top: 30px;
-  padding: 20px; 
-  border-radius: 20px; 
-  max-width: 300px; 
+  padding: 20px;
+  border-radius: 20px;
+  max-width: 300px;
 }
 
 .trending-subscribe-heading {
@@ -107,50 +109,50 @@
 
 // Name section
 .trending-who {
-    margin-top: 20px;
-    background-color: #f0f0f0;
-    padding: 20px;
-    border-radius: 10px;
-    max-width: 300px;
+  margin-top: 20px;
+  background-color: #f0f0f0;
+  padding: 20px;
+  border-radius: 10px;
+  max-width: 300px;
 }
 
 .trending-who-body {
-    display: flex;
-    align-items: left;
-    margin-bottom: 10px;
+  display: flex;
+  align-items: left;
+  margin-bottom: 10px;
 }
 
 .tr-who-body-icon img {
   margin-top: 5px;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    margin-right: 10px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-right: 10px;
 }
 
 .tr-who-body-name {
-    font-size: 13px;
-    font-weight: bold;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 .tr-who-body-id {
-   font-weight: normal;
-    font-size: 10px;
-    color: #333;
-    margin-top: 5px; 
+  font-weight: normal;
+  font-size: 10px;
+  color: #333;
+  margin-top: 5px;
 }
 
 .tr-who-body-followbtn {
-    background-color: #007bff;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    padding: 3px 10px;
-    cursor: pointer;
-    margin-left: auto;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 3px 10px;
+  cursor: pointer;
+  margin-left: auto;
 }
 
 .scrollable-container {
-  max-height: 200px; 
-  overflow-y: auto; 
+  max-height: 200px;
+  overflow-y: auto;
 }

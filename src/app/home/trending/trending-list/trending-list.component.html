@@ -1,41 +1,39 @@
 <div class="trending-box trending-search">
-    <span class="trending-search-icon"><img src="https://png.pngtree.com/element_our/20190601/ourmid/pngtree-search-icon-image_1344447.jpg" /></span>
-    <input class="trending-search-input" type="text" placeholder="Search"/>
+    <span class="trending-search-icon"><img
+            src="https://png.pngtree.com/element_our/20190601/ourmid/pngtree-search-icon-image_1344447.jpg" /></span>
+    <input class="trending-search-input" type="text" placeholder="Search" />
 </div>
 <div class="trending-box trending-subscribe">
     <div class="trending-subscribe-heading">Subscribe to Premium</div>
-    <div class="trending-subscribe-content">Subscribe to unlock new features and if eligible, receive a share of ads revenue.</div>
+    <div class="trending-subscribe-content">Subscribe to unlock new features and if eligible, receive a share of ads
+        revenue.</div>
     <button class="trending-subscribe-button">Subscribe</button>
 </div>
 <div class="trending-box trending-happening">
     <div class="scrollable-container">
-    <div class="trending-happening-heading">What's happening</div>
-    <ng-container *ngFor="let trending of trendingList">
-        <div class="trending-happening-body">
-            <div class="tr-ha-bo-place">{{trending.place}}</div>
-            <div class="tr-ha-bo-hashtag">{{trending.hashtag}}</div>
-            <div class="tr-ha-bo-content">{{trending.content}}</div>
-            <div class="tr-ha-bo-post">{{trending.postCount}}</div>
-        </div>
-    </ng-container>
+        <div class="trending-happening-heading">What's happening</div>
+        <ng-container *ngFor="let trending of trendingList">
+            <div class="trending-happening-body">
+                <div class="tr-ha-bo-place">{{trending.place}}</div>
+                <div class="tr-ha-bo-hashtag">{{trending.hashtag}}</div>
+                <div class="tr-ha-bo-content">{{trending.content}}</div>
+                <div class="tr-ha-bo-post">{{trending.postCount}}</div>
+            </div>
+        </ng-container>
     </div>
 </div>
 <div class="trending-box trending-who">
     <div class="scrollable-container">
-    <ng-container *ngFor="let trendingPerson of trendingPersonList">
-   
-        <div class="trending-who-body">
-            <div class="tr-who-body-icon"><img src="https://icon-library.com/images/person-head-icon/person-head-icon-27.jpg"/></div>
-            <div class="tr-who-body-name">{{trendingPerson.author}}
-                <br/>
-                <span class="tr-who-body-id">{{trendingPerson.username}}</span>
-
+        <ng-container *ngFor="let trendingPerson of trendingPersonList">
+            <div class="trending-who-body">
+                <div class="tr-who-body-icon"><img
+                        src="https://icon-library.com/images/person-head-icon/person-head-icon-27.jpg" /></div>
+                <div class="tr-who-body-name">{{trendingPerson.author}}
+                    <br />
+                    <span class="tr-who-body-id">{{trendingPerson.username}}</span>
+                </div>
+                <button class="tr-who-body-followbtn">follow</button>
             </div>
-
-            <button class="tr-who-body-followbtn">follow</button>
-        </div>
-
-   
-    </ng-container>
+        </ng-container>
     </div>
 </div>
