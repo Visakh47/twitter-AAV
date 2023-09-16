@@ -16,4 +16,8 @@ export class SettingListComponent implements OnInit {
     this.userData = this.localStorageService.get(USER_KEY);
     console.log(this.userData);
   }
+
+  public onLogOut(){
+    
+  }
 }
