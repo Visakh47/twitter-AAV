@@ -31,7 +31,7 @@
     <button class="post_button">Post</button>
 </div>
 <div class="profileDetails">
-    <div class="profilePhoto">
+    <!-- <div class="profilePhoto">
         <img src="https://cdn-icons-png.flaticon.com/512/3177/3177440.png">
     </div>
     <div>
@@ -39,5 +39,15 @@
         <p>@{{userData.name}}</p>
     </div>
     <div class="logoutdiv"><button class="logOut" (click)="onLogOut()">Log Out</button>
+    </div> -->
+    <div class="trending-who-body">
+        <div class="tr-who-body-icon"><img src="https://icon-library.com/images/person-head-icon/person-head-icon-27.jpg"/></div>
+        <div class="tr-who-body-name">{{userData.name}}
+            <br/>
+        <span class="tr-who-body-id">@{{userData.name}}</span>
+
+        </div>
+
+        <button class="tr-who-body-followbtn"(click)="onLogOut()">Log Out</button>
     </div>
 </div>
