@@ -16,6 +16,8 @@
                 <div class="validationError"
                     *ngIf="signUpForm.controls['email'].hasError('required') && signUpForm.controls['email'].touched">
                     Email is Required</div>
+                    <div class="validationError" *ngIf="signUpForm.controls['email'].hasError('invalidEmail')">
+                    Email should contain '@carestack.com'</div>
             </div>
             <div>
                 <label class="signup-container__form-label"> Enter password: </label>

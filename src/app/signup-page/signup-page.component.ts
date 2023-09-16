@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IUserDetails } from '../app.interface';
 import { Router } from '@angular/router';
 import { UserAuthService } from '../service/user-auth.service';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { AbstractControl, FormBuilder, FormControl, FormGroup, ValidatorFn, Validators } from '@angular/forms';
 
 @Component({
   selector: 'app-signup-page',
@@ -22,14 +22,14 @@ export class SignupPageComponent {
 
   constructor(
     private readonly router: Router,
-   private readonly fb: FormBuilder,
-   private readonly userAuthService: UserAuthService
+    private readonly fb: FormBuilder,
+    private readonly userAuthService: UserAuthService
   ) { }
 
   public ngOnInit(): void {
     this.signUpForm = this.fb.group({
       name: ['', Validators.required],
-      email: ['', Validators.required],
+      email: ['', Validators.compose([Validators.required,this.emailValidator()])],
       password: ['', Validators.required],
       confirmPassword: ['', Validators.required]
     })
@@ -46,6 +46,15 @@ export class SignupPageComponent {
     }
     else {
       this.error = true;
+    }
+  }
+
+  private emailValidator(): ValidatorFn {
+    return (control: AbstractControl): { [key: string]: any } | null => {
+      if (!control.value) {
+        return null;
+      }
+      return control.value.includes('@carestack.com') ? null : { invalidEmail: true };
     }
   }
 }
