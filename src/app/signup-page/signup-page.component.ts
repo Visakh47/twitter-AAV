@@ -20,16 +20,12 @@ export class SignupPageComponent {
 
   }>;
 
-  
-//you can't directly access a service within a component
-//you have to perform dependency injection with a constructor to use router Service
-
   constructor(
-    public readonly router: Router,private readonly fb: FormBuilder,  private readonly userAuthService: UserAuthService
-  ) {
+    private readonly router: Router,
+   private readonly fb: FormBuilder,
+   private readonly userAuthService: UserAuthService
+  ) { }
 
-  }
-  
   public ngOnInit(): void {
     this.signUpForm = this.fb.group({
       name: ['', Validators.required],
@@ -44,13 +40,12 @@ export class SignupPageComponent {
   }
 
   public onSubmit(): void {
-
-    if(this.signUpForm.controls['password'].value===this.signUpForm.controls['confirmPassword'].value){
+    if (this.signUpForm.controls['password'].value === this.signUpForm.controls['confirmPassword'].value) {
       this.userAuthService.setUserDetails(this.signUpForm.value as IUserDetails);
       void this.router.navigate(['login']);
     }
-    else{
-      this.error=true;
+    else {
+      this.error = true;
     }
   }
 }

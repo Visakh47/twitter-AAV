@@ -6,26 +6,30 @@
             <div>
                 <label class="signup-container__form-label"> Enter name: </label>
                 <input type="text" name="username" formControlName="name">
-                <div class="validationError" *ngIf="signUpForm.controls['name'].hasError('required') && signUpForm.controls['name'].touched">Name is Required</div>
-
+                <div class="validationError"
+                    *ngIf="signUpForm.controls['name'].hasError('required') && signUpForm.controls['name'].touched">Name
+                    is Required</div>
             </div>
             <div>
                 <label class="signup-container__form-label"> Enter email: </label>
                 <input type="email" name="email" formControlName="email">
-                <div class="validationError" *ngIf="signUpForm.controls['email'].hasError('required') && signUpForm.controls['email'].touched">Email is Required</div>
-
+                <div class="validationError"
+                    *ngIf="signUpForm.controls['email'].hasError('required') && signUpForm.controls['email'].touched">
+                    Email is Required</div>
             </div>
             <div>
                 <label class="signup-container__form-label"> Enter password: </label>
                 <input type="password" name="pwd" formControlName="password">
-                <div class="validationError" *ngIf="signUpForm.controls['password'].hasError('required') && signUpForm.controls['password'].touched">password is Required</div>
-
+                <div class="validationError"
+                    *ngIf="signUpForm.controls['password'].hasError('required') && signUpForm.controls['password'].touched">
+                    password is Required</div>
             </div>
             <div>
                 <label class="signup-container__form-label"> Confirm password: </label>
                 <input type="password" name="cpwd" formControlName="confirmPassword">
-                <div class="validationError" *ngIf="signUpForm.controls['confirmPassword'].hasError('required') && signUpForm.controls['confirmPassword'].touched">Confirm your Password</div>
-
+                <div class="validationError"
+                    *ngIf="signUpForm.controls['confirmPassword'].hasError('required') && signUpForm.controls['confirmPassword'].touched">
+                    Confirm your Password</div>
             </div>
         </div>
         <div class="signup-container__buttons">

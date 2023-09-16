@@ -7,8 +7,6 @@ import { SidebarModule } from './sidebar/sidebar.module';
 import { TrendingModule } from './trending/trending.module';
 import { HomeComponent } from './home.component';
 
-
-
 @NgModule({
   declarations: [
     HomeComponent

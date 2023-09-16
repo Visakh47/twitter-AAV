@@ -1,15 +1,15 @@
 .sidebar {
-    width: 260px;
-    background-color: white;
-    padding: 7px;
-    position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    display: flex;
-    justify-content: center;
-  }
+  width: 260px;
+  background-color: white;
+  padding: 7px;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
 
-  app-setting-list{
-    width: inherit;
-  }
+app-setting-list {
+  width: inherit;
+}

@@ -6,8 +6,6 @@ import { FeedComponent } from './feed.component';
 import { FormsModule } from '@angular/forms';
 import { TitleCapitlizePipe } from 'src/app/pipes/title-capitlize.pipe';
 
-
-
 @NgModule({
   declarations: [
     TweetComponent,

@@ -11,12 +11,12 @@ const USER_KEY = 'userData'
 })
 export class TweetComponent {
   public tweetContent!: string;
-  @Output() public TweetEmitter: EventEmitter<any> = new EventEmitter();
-  constructor(private readonly localStorageService: LocalStorageService) {}
-  
-  public postTweet(): void{
+  @Output() private TweetEmitter: EventEmitter<any> = new EventEmitter();
+  constructor(private readonly localStorageService: LocalStorageService) { }
+
+  public postTweet(): void {
     let user: IUserDetails = this.localStorageService.get(USER_KEY);
-    const twt: tweet ={
+    const twt: tweet = {
       id: Number(`${new Date().getTime()}${Math.floor(Math.random() * 10000)}`), //unique id
       content: this.tweetContent,
       author: user.name,
@@ -24,7 +24,6 @@ export class TweetComponent {
       liked: false
     };
     this.TweetEmitter.emit(twt);
-
     this.tweetContent = '';
   }
 }

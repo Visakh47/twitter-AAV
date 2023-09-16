@@ -17,14 +17,13 @@ export class LoginPageComponent {
     password: FormControl<any>
   }>;
 
-  constructor(public readonly router: Router,
+  constructor(
+    private readonly router: Router,
     private readonly fb: FormBuilder,
-    private readonly userAuthService: UserAuthService) {
-  }
+    private readonly userAuthService: UserAuthService
+    ) { }
 
   public ngOnInit(): void {
-
-
     this.loginForm = this.fb.group({
       email: ['', Validators.required],
       password: ['', Validators.required]

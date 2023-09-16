@@ -1,81 +1,80 @@
 .signup-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 100vh;
-    background-color: #f5f8fa;
-  
-    h1 {
-      font-size: 24px;
-      margin-bottom: 16px;
-      color: #1da1f2;
-    }
-  
-    &__error {
-      color: #e0245e;
-      font-weight: bold;
-      margin-bottom: 16px;
-    }
-  
-    &__form {
-      background-color: #fff;
-      border: 1px solid #ccc;
-      border-radius: 8px;
-      padding: 20px;
-      padding-right: 35px;
-      width: 600px;
-  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: #f5f8fa;
+
+  h1 {
+    font-size: 24px;
+    margin-bottom: 16px;
+    color: #1da1f2;
+  }
+
+  &__error {
+    color: #e0245e;
+    font-weight: bold;
+    margin-bottom: 16px;
+  }
+
+  &__form {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    padding-right: 35px;
+    width: 600px;
+
     &-label {
-        display: block;
-        margin-bottom: 8px;
-        font-weight: bold;
-      }
-  
-      input[type="text"],
-      input[type="email"],
-      input[type="password"] {
-        width: 100%;
-        padding: 8px;
-        margin-bottom: 16px;
-        border: 1px solid #ccc;
-        border-radius: 4px;
-        font-size: 16px;
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 8px;
+      margin-bottom: 16px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 16px;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 16px;
+
+    &-signup {
+      background-color: #1da1f2;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 16px;
+      font-size: 16px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #0d8bff;
       }
     }
-  
-    &__buttons {
-      display: flex;
-      justify-content: space-between;
-      margin-top: 16px;
-  
-      &-signup {
-        background-color: #1da1f2;
-        color: #fff;
-        border: none;
-        border-radius: 4px;
-        padding: 8px 16px;
-        font-size: 16px;
-        cursor: pointer;
-  
-        &:hover {
-          background-color: #0d8bff;
-        }
-      }
-  
-      &-reset {
-        background-color: transparent;
-        color: #1da1f2;
-        border: none;
-        border-radius: 4px;
-        padding: 8px 16px;
-        font-size: 16px;
-        cursor: pointer;
-  
-        &:hover {
-          background-color: #e1f5fe;
-        }
+
+    &-reset {
+      background-color: transparent;
+      color: #1da1f2;
+      border: none;
+      border-radius: 4px;
+      padding: 8px 16px;
+      font-size: 16px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: #e1f5fe;
       }
     }
   }
-  
+}

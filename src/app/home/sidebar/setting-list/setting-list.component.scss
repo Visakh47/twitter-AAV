@@ -1,88 +1,91 @@
+ /* Style for the circular image container */
+ .twitterImage {
+     width: 50px;
+     height: 50px;
+     border-radius: 50%;
+     overflow: hidden;
+     margin: 0 auto;
+     border: 2px solid #1DA1F2;
+ }
 
-  /* Style for the circular image container */
-.twitterImage {
-    width: 50px; 
-    height: 50px; 
-    border-radius: 50%;
-    overflow: hidden; 
-    margin: 0 auto; 
-    border: 2px solid #1DA1F2; 
-}
+ /* Style for the image within the circular container */
+ .twitterImage img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
 
-/* Style for the image within the circular container */
-.twitterImage img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-}
-.profilePhoto {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin: 18px;
-    border: 2px solid #1DA1F2;
-    /* display: flex; */
-}
+ .profilePhoto {
+     width: 30px;
+     height: 30px;
+     border-radius: 50%;
+     overflow: hidden;
+     margin: 18px;
+     border: 2px solid #1DA1F2;
+     /* display: flex; */
+ }
 
-/* Style for the image within the circular container */
-.profilePhoto img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-}
+ /* Style for the image within the circular container */
+ .profilePhoto img {
+     width: 100%;
+     height: 100%;
+     object-fit: cover;
+ }
 
-.settingOptions{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-}
-.forHover:hover {
-    background-color: lightgrey;
-    border-radius: 30px;
-    padding: 12px 64px;
-    font-size: 16px;
-    cursor: pointer;
-  }
+ .settingOptions {
+     display: flex;
+     justify-content: center;
+     flex-direction: column;
+     align-items: center;
+ }
 
-.post_button{
-    background-color: #1da1f2;
-    color: #fff;
-    border: none;
-    border-radius: 30px;
-    padding: 12px 64px;
-    font-size: 16px;
-    cursor: pointer;
-}
-.postButton{
-    display: flex;
-    justify-content: center;
-}
+ .forHover:hover {
+     background-color: lightgrey;
+     border-radius: 30px;
+     padding: 12px 64px;
+     font-size: 16px;
+     cursor: pointer;
+ }
 
-.profileDetails{
-    display: flex;
-    justify-content: left;
-    bottom: 2px;
-    position: absolute;
-    width: inherit;
-}
+ .post_button {
+     background-color: #1da1f2;
+     color: #fff;
+     border: none;
+     border-radius: 30px;
+     padding: 12px 64px;
+     font-size: 16px;
+     cursor: pointer;
+ }
 
-.logOut{
-    position: absolute;
-    top: 25px;
-    right: 40px;
-    width: auto;
-    height: 30px;
-    background-color: blue;
-    color: white;
-    border: none;
-    border-radius: 50px;
-    padding: 5px 7px;
-    cursor: pointer;
-    font-size: 16px;
-    font-weight: bold;
-}
-.logoutdiv{
-    display: flex;
-}
+ .postButton {
+     display: flex;
+     justify-content: center;
+ }
+
+ .profileDetails {
+     display: flex;
+     justify-content: left;
+     bottom: 2px;
+     position: absolute;
+     width: inherit;
+ }
+
+ .logOut {
+     position: absolute;
+     top: 25px;
+     right: 40px;
+     width: auto;
+     height: 30px;
+     background-color: blue;
+     color: white;
+     border: none;
+     border-radius: 50px;
+     padding: 5px 7px;
+     cursor: pointer;
+     font-size: 16px;
+     font-weight: bold;
+ }
+
+ .logoutdiv {
+     display: flex;
+ }
