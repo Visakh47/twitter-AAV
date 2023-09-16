@@ -1,18 +1,20 @@
 <div class="login-container">
     <h1> Login Page</h1>
+    <form [formGroup]="loginForm" >
     <div class="login-container__error" *ngIf="error">Login Failed, Sign up Again</div>
     <div class="login-container__form">
         <div>
             <label class="login-container__form-label" > Enter email: </label>
-            <input type="email" name="email" [(ngModel)] = "form.email">
+            <input type="email" name="email" formControlName="email">
         </div>
         <div>
             <label class="login-container__form-label"> Enter password: </label>
-            <input type="password" name="pwd" [(ngModel)] = "form.password">
+            <input type="password" name="pwd" formControlName="password">
         </div>
     </div>
     <div class="login-container__buttons">
         <button class="login-container__buttons-login" (click)="onSubmit()"> Login </button>
-        <button class="login-container__buttons-reset" (click) ="onSignUp()"> Sign Up </button>
+        <button class="login-container__buttons-signup" (click) ="onSignUp()"> Sign Up </button>
     </div>
+    </form>
 </div>
