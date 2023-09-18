@@ -6,6 +6,7 @@ import { FeedModule } from './feed/feed.module';
 import { SidebarModule } from './sidebar/sidebar.module';
 import { TrendingModule } from './trending/trending.module';
 import { HomeComponent } from './home.component';
+import { HomeRoutingModule } from './home-routing.module';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { HomeComponent } from './home.component';
     CommonModule,
     FeedModule,
     SidebarModule,
-    TrendingModule
+    TrendingModule,
+    HomeRoutingModule,
   ],
   exports: [
     HomeComponent,
