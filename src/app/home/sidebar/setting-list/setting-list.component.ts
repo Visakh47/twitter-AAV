@@ -19,7 +19,7 @@ export class SettingListComponent implements OnInit {
   }
 
   public onLogOut() {
+    this.localStorageService.set('loggedin', false);
     void this.router.navigate(['login']);
-
   }
 }

@@ -3,6 +3,7 @@ import { IUserDetails } from '../app.interface';
 import { Router } from '@angular/router';
 import { UserAuthService } from '../service/user-auth.service';
 import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import { LocalStorageService } from '../service/local-storage.service';
 
 @Component({
   selector: 'app-login-page',
@@ -20,7 +21,8 @@ export class LoginPageComponent {
   constructor(
     private readonly router: Router,
     private readonly fb: FormBuilder,
-    private readonly userAuthService: UserAuthService
+    private readonly userAuthService: UserAuthService,
+    private readonly localStorageService: LocalStorageService,
     ) { }
 
   public ngOnInit(): void {
@@ -28,11 +30,14 @@ export class LoginPageComponent {
       email: ['', Validators.required],
       password: ['', Validators.required]
     })
+    this.localStorageService.set('loggedin', false);
   }
 
   public onSubmit(): void {
     const isUserValid = this.userAuthService.validateUser(this.loginForm.value);
     isUserValid ? void this.router.navigate(['home']) : this.error = true;
+    if(isUserValid)
+      this.localStorageService.set('loggedin',true);
   }
 
   public onSignUp(): void {

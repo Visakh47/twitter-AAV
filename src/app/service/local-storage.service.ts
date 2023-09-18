@@ -15,4 +15,8 @@ export class LocalStorageService {
     let value = localStorage.getItem(key);
     return JSON.parse(value!);
   }
+
+  public remove(key: string) {
+    localStorage.removeItem(key);
+  }
 }
