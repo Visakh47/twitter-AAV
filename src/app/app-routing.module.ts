@@ -9,7 +9,7 @@ import { ProductsComponent } from './home/products/products.component';
 const routes: Routes = [
   {
     path: '',
-    redirectTo: 'login',
+    redirectTo: 'home',
     pathMatch: 'full'
   },
   {
