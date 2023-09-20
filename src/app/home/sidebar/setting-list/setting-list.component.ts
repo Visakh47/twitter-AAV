@@ -22,4 +22,8 @@ export class SettingListComponent implements OnInit {
     this.localStorageService.set('loggedin', false);
     void this.router.navigate(['login']);
   }
+
+  public redirectProduct() {
+    void this.router.navigate(['products']);
+  }
 }

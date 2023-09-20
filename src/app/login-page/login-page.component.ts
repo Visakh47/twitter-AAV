@@ -35,7 +35,7 @@ export class LoginPageComponent {
 
   public onSubmit(): void {
     const isUserValid = this.userAuthService.validateUser(this.loginForm.value);
-    isUserValid ? void this.router.navigate(['products']) : this.error = true;
+    isUserValid ? void this.router.navigate(['home']) : this.error = true;
     if(isUserValid)
       this.localStorageService.set('loggedin',true);
   }
