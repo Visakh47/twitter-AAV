@@ -4,3 +4,9 @@ export interface IUserDetails {
     password: string,
     confirmPassword: string;
 }
+
+export interface product{
+id:number,
+title:string,
+description:string
+}

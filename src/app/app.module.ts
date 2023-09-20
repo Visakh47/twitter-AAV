@@ -12,12 +12,14 @@ import { UserAuthService } from './service/user-auth.service';
 import { LocalStorageService } from './service/local-storage.service';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { HttpsConverterInterceptor } from './https-converter.interceptor';
+import { ProductsComponent } from './home/products/products.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginPageComponent,
     SignupPageComponent,
+    ProductsComponent,
   ],
   imports: [
     BrowserModule,
