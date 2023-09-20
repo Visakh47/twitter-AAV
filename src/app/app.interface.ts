@@ -5,6 +5,11 @@ export interface IUserDetails {
     confirmPassword: string;
 }
 
+export interface User{
+    name: string,
+    email: string
+}
+
 export interface product{
 id:number,
 title:string,

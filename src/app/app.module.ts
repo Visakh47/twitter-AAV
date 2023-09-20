@@ -13,6 +13,7 @@ import { LocalStorageService } from './service/local-storage.service';
 import { HTTP_INTERCEPTORS, HttpClientModule } from '@angular/common/http';
 import { HttpsConverterInterceptor } from './https-converter.interceptor';
 import { ProductsComponent } from './home/products/products.component';
+import { JWT_OPTIONS, JwtHelperService } from '@auth0/angular-jwt';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,8 @@ import { ProductsComponent } from './home/products/products.component';
     FormsModule,
     ReactiveFormsModule
   ],
-  providers: [UserAuthService, LocalStorageService,
+  providers: [UserAuthService, LocalStorageService,JwtHelperService,
+    { provide: JWT_OPTIONS, useValue: JWT_OPTIONS },
     { provide: HTTP_INTERCEPTORS, useClass: HttpsConverterInterceptor, multi: true }],
   bootstrap: [AppComponent]
 })
