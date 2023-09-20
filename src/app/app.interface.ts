@@ -10,3 +10,9 @@ id:number,
 title:string,
 description:string
 }
+export interface productParent{
+    limit:number,
+    skip:number,
+    total:number,
+    products:product[],
+}
