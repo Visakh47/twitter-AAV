@@ -26,7 +26,7 @@ export class SignupPageComponent {
     private readonly userAuthService: UserAuthService
   ) { }
 
-  public ngOnInit(): void {
+  public ngOnInit() : void{
     this.signUpForm = this.fb.group({
       name: ['', Validators.required],
       email: ['', Validators.compose([Validators.required,this.emailValidator()])],

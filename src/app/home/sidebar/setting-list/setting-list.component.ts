@@ -11,7 +11,7 @@ const USER_KEY = "userData"
 })
 export class SettingListComponent implements OnInit {
   public userData!: IUserDetails;
-  constructor(private readonly localStorageService: LocalStorageService, private readonly router: Router) { }
+  constructor(private readonly localStorageService: LocalStorageService, public readonly router: Router) { }
 
   ngOnInit(): void {
     this.userData = this.localStorageService.get(USER_KEY);
@@ -24,6 +24,6 @@ export class SettingListComponent implements OnInit {
   }
 
   public redirectProduct() {
-    void this.router.navigate(['products']);
+    this.router.navigate(['products']);
   }
 }

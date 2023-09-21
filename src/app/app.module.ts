@@ -29,7 +29,8 @@ import { JWT_OPTIONS, JwtHelperService } from '@auth0/angular-jwt';
     HomeModule,
     CommonModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    
   ],
   providers: [UserAuthService, LocalStorageService,JwtHelperService,
     { provide: JWT_OPTIONS, useValue: JWT_OPTIONS },
