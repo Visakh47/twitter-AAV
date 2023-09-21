@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { TweetComponent } from './tweet.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { CommonModule } from '@angular/common';
 
 describe('TweetComponent', () => {
   let component: TweetComponent;
@@ -8,7 +10,7 @@ describe('TweetComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [TweetComponent]
+      declarations: [TweetComponent],imports:[ReactiveFormsModule,FormsModule,CommonModule]
     });
     fixture = TestBed.createComponent(TweetComponent);
     component = fixture.componentInstance;

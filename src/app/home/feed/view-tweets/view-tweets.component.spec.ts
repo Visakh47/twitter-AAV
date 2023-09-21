@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ViewTweetsComponent } from './view-tweets.component';
+import { tweet } from '../feed.interface';
 
 describe('ViewTweetsComponent', () => {
   let component: ViewTweetsComponent;
@@ -14,6 +15,7 @@ describe('ViewTweetsComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
+
 
   it('should create', () => {
     expect(component).toBeTruthy();
