@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SettingListComponent } from './setting-list.component';
+import { CommonModule } from '@angular/common';
 
 describe('SettingListComponent', () => {
   let component: SettingListComponent;
@@ -8,6 +9,7 @@ describe('SettingListComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
+      imports: [CommonModule],
       declarations: [SettingListComponent]
     });
     fixture = TestBed.createComponent(SettingListComponent);

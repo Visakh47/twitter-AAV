@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { SidebarComponent } from './sidebar.component';
+import { SettingListComponent } from './setting-list/setting-list.component';
+import { CommonModule } from '@angular/common';
 
 describe('SidebarComponent', () => {
   let component: SidebarComponent;
@@ -8,7 +10,8 @@ describe('SidebarComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [SidebarComponent]
+      declarations: [SettingListComponent,SidebarComponent],
+      imports: [CommonModule],
     });
     fixture = TestBed.createComponent(SidebarComponent);
     component = fixture.componentInstance;
