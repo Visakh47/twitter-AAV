@@ -15,7 +15,7 @@ describe('TrendingComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create trending', () => {
     expect(component).toBeTruthy();
   });
 });

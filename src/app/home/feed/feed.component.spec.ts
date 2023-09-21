@@ -15,7 +15,7 @@ describe('FeedComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create feed', () => {
     expect(component).toBeTruthy();
   });
 });

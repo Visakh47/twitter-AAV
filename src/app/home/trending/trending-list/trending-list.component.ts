@@ -7,6 +7,7 @@ import { ITrendingHappening, ITrendingPerson } from '../../home.interface';
   styleUrls: ['./trending-list.component.scss']
 })
 export class TrendingListComponent implements OnInit {
+  componentName ="trendingList";
  public ngOnInit(): void {
    console.log(this.trendingList);
  }

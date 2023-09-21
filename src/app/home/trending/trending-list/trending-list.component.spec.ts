@@ -14,7 +14,10 @@ describe('TrendingListComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('should create trending-list', () => {
     expect(component).toBeTruthy();
   });
+  it('test for title',()=>{
+    expect(component.componentName).toBe('trendingList');
+  })
 });
